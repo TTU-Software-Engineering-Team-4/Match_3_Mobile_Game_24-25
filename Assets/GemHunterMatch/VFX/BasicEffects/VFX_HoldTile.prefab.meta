@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4389d5a1e955b994798be783ad5a3810
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/BasicEffects/VFX_HoldTile.prefab
+  uploadId: 699660

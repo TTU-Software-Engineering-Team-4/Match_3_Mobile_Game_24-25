@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: aefe03d66f4b913458d04a7180842c24
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Prefabs/MatchEffect.prefab
+  uploadId: 699660

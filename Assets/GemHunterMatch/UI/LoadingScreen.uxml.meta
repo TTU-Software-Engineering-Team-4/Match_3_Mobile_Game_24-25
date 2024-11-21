@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: bd9970f83449dea4994bbeb23aef395f
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 13804, guid: 0000000000000000e000000000000000, type: 0}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/UI/LoadingScreen.uxml
+  uploadId: 699660

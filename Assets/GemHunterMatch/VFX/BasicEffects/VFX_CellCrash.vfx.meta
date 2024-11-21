@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: c4ab81e245a1b0047b8d99943f91a6a5
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/BasicEffects/VFX_CellCrash.vfx
+  uploadId: 699660

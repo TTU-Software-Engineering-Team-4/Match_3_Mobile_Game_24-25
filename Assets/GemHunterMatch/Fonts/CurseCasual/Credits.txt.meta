@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 015959919a63044df90ce9d79d587937
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Fonts/CurseCasual/Credits.txt
+  uploadId: 699660

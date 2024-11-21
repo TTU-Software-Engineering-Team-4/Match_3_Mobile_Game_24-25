@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d3d488c116784e14f8d9926759659256
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Prefabs/BonusGems/HorizontalBonus.prefab
+  uploadId: 699660

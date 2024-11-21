@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: de89a77b947988849a9d2d1ed2a707c3
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/ShaderGraphs/ShaderGraph_MoveVertices.shadergraph
+  uploadId: 699660

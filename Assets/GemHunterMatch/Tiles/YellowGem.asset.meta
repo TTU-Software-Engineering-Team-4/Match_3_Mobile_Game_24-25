@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 253e4b97e472d46e4ac748b9ec4cca4c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Tiles/YellowGem.asset
+  uploadId: 699660

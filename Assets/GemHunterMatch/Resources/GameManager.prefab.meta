@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: dd27b66b35b0829499d16e86f243c372
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Resources/GameManager.prefab
+  uploadId: 699660

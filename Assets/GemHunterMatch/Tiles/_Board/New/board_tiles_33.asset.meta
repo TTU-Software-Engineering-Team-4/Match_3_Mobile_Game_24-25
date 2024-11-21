@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e9e65bae83657e64a91495860aecbf68
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Tiles/_Board/New/board_tiles_33.asset
+  uploadId: 699660

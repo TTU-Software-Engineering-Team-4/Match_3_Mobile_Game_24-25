@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b6ddbfec1b6cb44459c7478b86ab51bf
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Characters/Mermaid/Animations/Animation_character_lowmoves.anim
+  uploadId: 699660

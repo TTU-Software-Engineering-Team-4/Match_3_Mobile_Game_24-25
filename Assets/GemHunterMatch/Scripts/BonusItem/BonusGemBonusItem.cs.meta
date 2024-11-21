@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: cf15de8e9fcfb3547b1b078b101a65c3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Scripts/BonusItem/BonusGemBonusItem.cs
+  uploadId: 699660

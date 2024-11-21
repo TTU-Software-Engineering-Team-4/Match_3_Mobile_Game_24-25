@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2f161acfab44b00439cdde69c9bb8b56
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/BasicEffects/VFX_CellHold_Distortion.vfx
+  uploadId: 699660

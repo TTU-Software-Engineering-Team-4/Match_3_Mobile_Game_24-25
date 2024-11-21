@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 36b555ce632753044b933f4b2e09e9fa
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Audio/Prefabs/SFXSource.prefab
+  uploadId: 699660

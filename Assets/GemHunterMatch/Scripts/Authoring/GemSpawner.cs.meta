@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 4a4f040b39a135141bda618acd169206
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Scripts/Authoring/GemSpawner.cs
+  uploadId: 699660

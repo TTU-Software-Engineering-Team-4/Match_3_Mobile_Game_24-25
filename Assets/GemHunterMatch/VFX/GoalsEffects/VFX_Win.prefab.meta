@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2571ff47b782206499bc35b1ce8a17ae
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/GoalsEffects/VFX_Win.prefab
+  uploadId: 699660

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8cc6bc4f5802b33419a96e85fb84e771
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Prefabs/GemYellow.prefab
+  uploadId: 699660

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2830100d917f7d8448164c6134392c2e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Tiles/Palette.prefab
+  uploadId: 699660

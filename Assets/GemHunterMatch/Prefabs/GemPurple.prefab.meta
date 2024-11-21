@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f3e47e37930ff8f48b693da87b4025c7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Prefabs/GemPurple.prefab
+  uploadId: 699660

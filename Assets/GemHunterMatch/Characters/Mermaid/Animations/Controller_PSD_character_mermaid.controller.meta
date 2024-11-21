@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 04f4da536bfcf7e479e9260fa0ac7a9e
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Characters/Mermaid/Animations/Controller_PSD_character_mermaid.controller
+  uploadId: 699660

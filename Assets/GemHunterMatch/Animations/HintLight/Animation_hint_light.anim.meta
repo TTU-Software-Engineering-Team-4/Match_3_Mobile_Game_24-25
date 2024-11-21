@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c5c92dfd43804484fa795b6dc5b6e966
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Animations/HintLight/Animation_hint_light.anim
+  uploadId: 699660

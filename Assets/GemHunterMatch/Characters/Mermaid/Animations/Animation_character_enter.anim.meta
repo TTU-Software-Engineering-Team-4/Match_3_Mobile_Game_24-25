@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c055197d41b57534d8f99528f8eacb96
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Characters/Mermaid/Animations/Animation_character_enter.anim
+  uploadId: 699660

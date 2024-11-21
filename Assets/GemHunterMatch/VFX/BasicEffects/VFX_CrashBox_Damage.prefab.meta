@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4b068e7559536e548a1c9e17faaaf785
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/BasicEffects/VFX_CrashBox_Damage.prefab
+  uploadId: 699660

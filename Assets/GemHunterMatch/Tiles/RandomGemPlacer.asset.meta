@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: be0cc00a021c25546aa26309000e93eb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Tiles/RandomGemPlacer.asset
+  uploadId: 699660

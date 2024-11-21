@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 7a11575aeb75f4b47aa5e777e84540c2
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Scripts/Authoring/GemPlacerTile.cs
+  uploadId: 699660

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 0e57c286bfbf10045b66afa053c4ad34
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/BasicEffects/VFX_CellHold.prefab
+  uploadId: 699660

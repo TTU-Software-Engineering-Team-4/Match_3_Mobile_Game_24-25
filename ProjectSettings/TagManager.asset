@@ -11,7 +11,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Portrait
   - 
   - 
   - 
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 867880795
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Gems
+    uniqueID: 1890678711
+    locked: 0
+  - name: Character
+    uniqueID: 3183144165
+    locked: 0
+  - name: VFX
+    uniqueID: 666422525
     locked: 0

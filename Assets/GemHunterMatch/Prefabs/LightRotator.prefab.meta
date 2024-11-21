@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a14b0135ba183b74cbf13f436cdd5c0e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Prefabs/LightRotator.prefab
+  uploadId: 699660

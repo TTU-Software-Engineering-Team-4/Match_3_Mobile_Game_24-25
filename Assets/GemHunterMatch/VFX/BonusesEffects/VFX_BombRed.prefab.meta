@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7ad7d152397dd88418f6ad937eab3285
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/BonusesEffects/VFX_BombRed.prefab
+  uploadId: 699660

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: da0e68f9b34b4e84ead1c6241dad760d
+VisualEffectImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/GoalsEffects/VFX_WhiteGoal.vfx
+  uploadId: 699660

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: baa9be943708daf48a91817c1ceee942
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Characters/Mermaid/Prefab_character_mermaid.prefab
+  uploadId: 699660

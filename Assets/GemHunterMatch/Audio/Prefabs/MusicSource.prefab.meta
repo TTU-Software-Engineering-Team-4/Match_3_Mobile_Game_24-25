@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 83e97c582b631bc4fa9c7dbf9f7c9aae
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Audio/Prefabs/MusicSource.prefab
+  uploadId: 699660

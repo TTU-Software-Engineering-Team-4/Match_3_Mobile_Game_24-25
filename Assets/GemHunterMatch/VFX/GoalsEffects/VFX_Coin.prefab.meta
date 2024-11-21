@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 202ea16d4263b8746948d26a69af75b9
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/VFX/GoalsEffects/VFX_Coin.prefab
+  uploadId: 699660

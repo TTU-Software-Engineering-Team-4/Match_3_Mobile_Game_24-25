@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 761d00c63087d1f4b806eeca34a1625e
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Prefabs/HintLight.prefab
+  uploadId: 699660
