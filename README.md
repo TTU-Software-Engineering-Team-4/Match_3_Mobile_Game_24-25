@@ -4,6 +4,6 @@ The Match-3 Detective Mobile Game—inspired by Kelle Riley’s Undercover Cats 
 Dependencies:
 https://assetstore.unity.com/packages/essentials/tutorial-projects/gem-hunter-match-2d-sample-project-278941
 
-Unity Version:
+Unity Version: 6000.0.27f1
 
 Version Control System:
