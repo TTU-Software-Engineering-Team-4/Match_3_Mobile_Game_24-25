@@ -4,7 +4,7 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
-  productGUID: 00000000000000000000000000000000
+  productGUID: 96512ea69ee739d92af80a58c26c943b
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -883,7 +883,7 @@ PlayerSettings:
   cloudProjectId: fffca844-d16b-4b7a-9d06-22b5c144646f
   framebufferDepthMemorylessMode: 0
   qualitySettingsNames: []
-  projectName: 2d-game-match3
+  projectName: Match-3-Mobile-Game 2024-11-21_14-44-56
   organizationId: bradenbellttu
   cloudEnabled: 0
   legacyClampBlendShapeWeights: 0
