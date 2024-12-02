@@ -3361,6 +3361,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3476952622449408493, guid: 3a95727ab637c7c46a958fff3c394df4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3476952622449408493, guid: 3a95727ab637c7c46a958fff3c394df4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3402,7 +3406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7652062355671967031, guid: 3a95727ab637c7c46a958fff3c394df4, type: 3}
       propertyPath: m_Name
-      value: BG
+      value: lvl1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

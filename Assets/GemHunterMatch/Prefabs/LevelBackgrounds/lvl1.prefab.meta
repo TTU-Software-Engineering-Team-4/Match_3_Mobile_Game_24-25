@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3a95727ab637c7c46a958fff3c394df4
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 278941
+  packageName: Gem Hunter Match - 2D Sample Project
+  packageVersion: 1.6
+  assetPath: Assets/GemHunterMatch/Prefabs/BG.prefab
+  uploadId: 699660
