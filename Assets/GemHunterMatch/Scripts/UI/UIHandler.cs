@@ -8,7 +8,6 @@ using UnityEngine.UIElements;
 using UnityEditor;
 #endif
 
-
 namespace Match3
 {
     [DefaultExecutionOrder(-9000)]
@@ -24,7 +23,7 @@ namespace Match3
 
             public AnimationCurve Curve;
 
-            //this is played when the animation reach its end position;
+            // Played when the animation reaches its end position
             public AudioClip EndClip;
         }
 
@@ -90,14 +89,10 @@ namespace Match3
 
         private Camera mainCamera;
         
-        // Setting Menu
-        private VisualElement m_SettingMenuRoot;
-
-        private Slider m_MainVolumeSlider;
-        private Slider m_MusicVolumeSlider;
-        private Slider m_SFXVolumeSlider;
+        // Settings Menu Handler
+        private SettingsMenuHandler settingsMenuHandler;
     
-        // End Screen
+        // End Screen Labels
         private Label m_CoinLabel;
         private Label m_LiveLabel;
         private Label m_StarLabel;
@@ -180,62 +175,19 @@ namespace Match3
             m_StarLabel = m_Document.rootVisualElement.Q<Label>("StarLabel");
 
             m_BottomBarRoot = m_Document.rootVisualElement.Q<VisualElement>("BoosterZone");
+
+            // Query the open settings button
             var openSettingButton = m_BottomBarRoot.parent.Q<Button>("ButtonMenu");
-            openSettingButton.clicked += () =>
-            {
-                ToggleSettingMenu(true);
-            };
-            
-            // Setting Menu
 
-            m_SettingMenuRoot = m_Document.rootVisualElement.Q<VisualElement>("Settings");
-            m_SettingMenuRoot.style.display = DisplayStyle.None;
-
-            var returnButton = m_SettingMenuRoot.Q<Button>("ReturnButton");
-            returnButton.clicked += () =>
-            {
-                FadeOut(() =>
-                {
-                    ToggleSettingMenu(false);
-                    SceneManager.LoadScene(1, LoadSceneMode.Single); 
-                });
-            };
-
-            var closeButton = m_SettingMenuRoot.Q<Button>("CloseButton");
-            closeButton.clicked += () =>
-            {
-                ToggleSettingMenu(false);
-            };
-
-            m_MainVolumeSlider = m_SettingMenuRoot.Q<Slider>("MainVolumeSlider");
-            m_MusicVolumeSlider = m_SettingMenuRoot.Q<Slider>("MusicVolumeSlider");
-            m_SFXVolumeSlider = m_SettingMenuRoot.Q<Slider>("SFXVolumeSlider");
-
-            var soundData = GameManager.Instance.Volumes;
-            m_MainVolumeSlider.value = soundData.MainVolume;
-            m_MusicVolumeSlider.value = soundData.MusicVolume;
-            m_SFXVolumeSlider.value = soundData.SFXVolume;
-
-            m_MainVolumeSlider.RegisterValueChangedCallback(evt =>
-            {
-                soundData.MainVolume = evt.newValue;
-                GameManager.Instance.UpdateVolumes();
-            });
-            
-            m_MusicVolumeSlider.RegisterValueChangedCallback(evt =>
-            {
-                soundData.MusicVolume = evt.newValue;
-                GameManager.Instance.UpdateVolumes();
-            });
-            
-            m_SFXVolumeSlider.RegisterValueChangedCallback(evt =>
-            {
-                soundData.SFXVolume = evt.newValue;
-                GameManager.Instance.UpdateVolumes();
-            });
+            // Initialize Settings Menu Handler
+            settingsMenuHandler = new SettingsMenuHandler(
+                m_Document.rootVisualElement,
+                openSettingButton,
+                OnReturnButtonClicked,
+                OnToggleSettingsMenu
+            );
 
             // Shop
-        
             var shopButton = m_Document.rootVisualElement.Q<Button>("ShopButton");
             shopButton.clicked += () =>
             {
@@ -281,7 +233,7 @@ namespace Match3
             };
             
             var curve = GameManager.Instance.Settings.VisualSettings.MatchFlyCurve;
-            m_MatchEffectEndTime = curve.keys[curve.keys.Length-1].time;
+            m_MatchEffectEndTime = curve.keys[curve.keys.Length - 1].time;
 
             m_CoverElement = m_Document.rootVisualElement.Q<VisualElement>("Cover");
             m_CoverElement.style.opacity = 1.0f;
@@ -319,6 +271,21 @@ namespace Match3
             ApplySafeArea(m_EndScreen);
         }
     
+        private void OnReturnButtonClicked()
+        {
+            // Return to main menu
+            FadeOut(() =>
+            {
+                SceneManager.LoadScene(1, LoadSceneMode.Single);
+            });
+        }
+
+        private void OnToggleSettingsMenu(bool display)
+        {
+            // Enable or disable input based on settings menu visibility
+            GameManager.Instance.Board.ToggleInput(!display);
+        }
+    
         public void Init()
         {
             m_LevelName.text = LevelData.Instance.LevelName;
@@ -329,7 +296,7 @@ namespace Match3
             m_EndTitleContent.style.display = DisplayStyle.None;
             m_EndScreen.style.display = DisplayStyle.None;
             
-            //we clear the goal container as when we reload a level, there 
+            // Clear the goal container in case of reload
             m_GemGoalContent.Clear();
             foreach (var goal in LevelData.Instance.Goals)
             {
@@ -343,8 +310,7 @@ namespace Match3
                 checkmark.style.display = DisplayStyle.None;
 
                 var background = newInstance.Q<VisualElement>("GoalGemTemplate");
-                background.style.backgroundImage =
-                    new StyleBackground(goal.Gem.UISprite);
+                background.style.backgroundImage = new StyleBackground(goal.Gem.UISprite);
 
                 m_GoalCountLabelLookup[goal.Gem.GemType] = label;
                 m_Checkmarks[goal.Gem.GemType] = checkmark;
@@ -454,17 +420,6 @@ namespace Match3
             
             UpdateTopBarData();
             m_EndScreen.style.display = DisplayStyle.Flex;
-        }
-
-        public void ToggleSettingMenu(bool display)
-        {
-            m_SettingMenuRoot.style.display = display ? DisplayStyle.Flex : DisplayStyle.None;
-            GameManager.Instance.Board.ToggleInput(!display);
-
-            if (!display)
-            {
-                GameManager.Instance.SaveSoundData();
-            }
         }
 
         public void FadeIn(Action onFadeFinished)
@@ -582,8 +537,7 @@ namespace Match3
                     float amount = anim.Curve.Evaluate(anim.Time) * angleAmount;
                     perpendicular *= amount;
                     
-                    //we need the length of that vector in the panel space, so we add this perpendicular to the world start
-                    //point then transform the point into the panel
+                    // Add perpendicular vector to world start point and transform to panel position
                     var worldPos = anim.WorldPosition + perpendicular;
                     var panelPos = (Vector3)RuntimePanelUtils.CameraTransformWorldToPanel(m_Document.rootVisualElement.panel, worldPos,
                         mainCamera);
@@ -591,7 +545,6 @@ namespace Match3
                     panelVector = panelPos - anim.StartPosition;
                 }
 
-                //var newPos = Vector2.Lerp(anim.StartPosition, anim.EndPosition, anim.Time);
                 var newPos = anim.StartPosition + anim.StartToEnd * matchCurve.Evaluate(anim.Time) + panelVector;
 
                 if (anim.Time >= m_MatchEffectEndTime)
@@ -638,7 +591,7 @@ namespace Match3
                         var currentSelected = m_SelectedBonusItem;
                         DeselectBonusItem();
 
-                        //clicking back on an already selected item just deselect it
+                        // Clicking back on an already selected item deselects it
                         if (currentSelected == child)
                         {
                             GameManager.Instance.ActivateBonusItem(null);
@@ -769,5 +722,10 @@ namespace Match3
                 m_DebugMenuRoot.style.display = DisplayStyle.None;
         }
 #endif
+
+        private void OnDestroy()
+        {
+            settingsMenuHandler?.Cleanup();
+        }
     }
 }

@@ -14,14 +14,7 @@ namespace Match3
         private UIDocument m_Document;
         private VisualElement m_Cover;
 
-        // Settings menu elements
-        private VisualElement m_SettingMenuRoot;
-        private Button returnButton;
-        private Button closeButton;
-        private Slider m_MainVolumeSlider;
-        private Slider m_MusicVolumeSlider;
-        private Slider m_SFXVolumeSlider;
-        private Button openSettingButton;
+        private SettingsMenuHandler settingsMenuHandler;
 
         private Action m_FadeCallback;
 
@@ -30,25 +23,32 @@ namespace Match3
         void Start()
         {
             GameManager.Instance.MainMenuOpened();
-        
+
             m_Document = GetComponent<UIDocument>();
             UIHandler.ApplySafeArea(m_Document.rootVisualElement);
 
-            // Initialize Settings Menu
-            InitializeSettingsMenu();
+            // Query the open settings button
+            var openSettingButton = m_Document.rootVisualElement.Q<Button>("ButtonMenu");
+
+            // Initialize Settings Menu Handler
+            settingsMenuHandler = new SettingsMenuHandler(
+                m_Document.rootVisualElement,
+                openSettingButton,
+                OnReturnButtonClicked
+            );
 
             var container = m_Document.rootVisualElement.Q<VisualElement>("LevelSelectionContainer");
         
             for (var i = 0; i < LevelList.SceneCount; ++i)
             {
-    #if UNITY_EDITOR
+#if UNITY_EDITOR
                 // In editor we check if the level is not null. This shouldn't happen in a build as the build script will check
                 if (LevelList.Scenes[i] == null)
                 {
                     Debug.LogWarning("LevelList contains a null scene! Fix or remove the scene from the LevelList");
                     continue;
                 }
-    #endif
+#endif
             
                 var newEntry = LevelEntry.Instantiate();
                 var label = newEntry.Q<Label>("LevelNumber");
@@ -89,101 +89,13 @@ namespace Match3
             StartCoroutine(FadeIn());
         }
 
-        void InitializeSettingsMenu()
+        private void OnReturnButtonClicked()
         {
-            // Query the Settings menu root
-            m_SettingMenuRoot = m_Document.rootVisualElement.Q<VisualElement>("Settings");
-            m_SettingMenuRoot.style.display = DisplayStyle.None;
-
-            // Query buttons
-            returnButton = m_SettingMenuRoot.Q<Button>("ReturnButton");
-            closeButton = m_SettingMenuRoot.Q<Button>("CloseButton");
-            openSettingButton = m_Document.rootVisualElement.Q<Button>("ButtonMenu");
-
-            // Register button click events
-            if (returnButton != null)
+            // Navigate back to the main scene or perform desired action
+            FadeOut(() =>
             {
-                returnButton.clicked += OnReturnButtonClicked;
-            }
-            else
-            {
-                Debug.LogError("ReturnButton not found in Settings menu.");
-            }
-
-            if (closeButton != null)
-            {
-                closeButton.clicked += OnCloseButtonClicked;
-            }
-            else
-            {
-                Debug.LogError("CloseButton not found in Settings menu.");
-            }
-
-            if (openSettingButton != null)
-            {
-                openSettingButton.clicked += () =>
-                {
-                    ToggleSettingMenu(true);
-                };
-            }
-            else
-            {
-                Debug.LogError("ButtonMenu not found in MainMenu UI.");
-            }
-
-            // Query sliders
-            m_MainVolumeSlider = m_SettingMenuRoot.Q<Slider>("MainVolumeSlider");
-            m_MusicVolumeSlider = m_SettingMenuRoot.Q<Slider>("MusicVolumeSlider");
-            m_SFXVolumeSlider = m_SettingMenuRoot.Q<Slider>("SFXVolumeSlider");
-
-            // Initialize sliders
-            var soundData = GameManager.Instance.Volumes;
-            m_MainVolumeSlider.value = soundData.MainVolume;
-            m_MusicVolumeSlider.value = soundData.MusicVolume;
-            m_SFXVolumeSlider.value = soundData.SFXVolume;
-
-            // Register slider value change callbacks
-            m_MainVolumeSlider.RegisterValueChangedCallback(evt =>
-            {
-                soundData.MainVolume = evt.newValue;
-                GameManager.Instance.UpdateVolumes();
+                SceneManager.LoadScene(1, LoadSceneMode.Single);
             });
-
-            m_MusicVolumeSlider.RegisterValueChangedCallback(evt =>
-            {
-                soundData.MusicVolume = evt.newValue;
-                GameManager.Instance.UpdateVolumes();
-            });
-
-            m_SFXVolumeSlider.RegisterValueChangedCallback(evt =>
-            {
-                soundData.SFXVolume = evt.newValue;
-                GameManager.Instance.UpdateVolumes();
-            });
-        }
-
-        void OnReturnButtonClicked()
-        {
-            ToggleSettingMenu(false);
-            // Implement the desired functionality when the Return button is clicked.
-            // For example, close the settings menu or navigate to a different scene.
-        }
-
-        void OnCloseButtonClicked()
-        {
-            ToggleSettingMenu(false);
-        }
-
-        void ToggleSettingMenu(bool display)
-        {
-            m_SettingMenuRoot.style.display = display ? DisplayStyle.Flex : DisplayStyle.None;
-
-            // If there's any input or interaction to disable/enable, handle it here.
-
-            if (!display)
-            {
-                GameManager.Instance.SaveSoundData();
-            }
         }
 
         void FadeOut(Action onFadeFinished = null)
@@ -202,15 +114,7 @@ namespace Match3
 
         void OnDestroy()
         {
-            if (returnButton != null)
-            {
-                returnButton.clicked -= OnReturnButtonClicked;
-            }
-            if (closeButton != null)
-            {
-                closeButton.clicked -= OnCloseButtonClicked;
-            }
-            // Note: If you used explicit methods for openSettingButton's click event, you can unregister it here.
+            settingsMenuHandler?.Cleanup();
         }
     }
 }
