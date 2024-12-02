@@ -6,4 +6,7 @@ https://assetstore.unity.com/packages/essentials/tutorial-projects/gem-hunter-ma
 
 Unity Version: 6000.0.27f1
 
-Version Control System:
+Version Control System: Git
+
+Assets:
+<a target="_blank" href="https://icons8.com/icon/13805/world-map">World Map</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
