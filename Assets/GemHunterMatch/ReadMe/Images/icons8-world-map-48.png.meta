@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      icons8-world-map-48_0: -7126205727051366052
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

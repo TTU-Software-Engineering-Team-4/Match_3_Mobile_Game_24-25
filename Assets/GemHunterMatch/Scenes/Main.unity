@@ -1046,7 +1046,7 @@ GameObject:
   - component: {fileID: 1757871389}
   - component: {fileID: 1757871390}
   m_Layer: 0
-  m_Name: MainMenu
+  m_Name: MapMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1079,8 +1079,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b765e9eaa310b44d8757453a591ccf8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  LevelList: {fileID: 11400000, guid: cc433e188d8e43c47ba845bac2a704e4, type: 2}
-  LevelEntry: {fileID: 9197481963319205126, guid: b72fbff2e2f117a46bfeeb66a8534d4e, type: 3}
 --- !u!114 &1757871390
 MonoBehaviour:
   m_ObjectHideFlags: 0
