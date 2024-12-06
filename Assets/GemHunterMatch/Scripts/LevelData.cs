@@ -19,7 +19,14 @@ namespace Match3
             public int Count;
         }
 
-        public string LevelName = "Level";
+        // Use this field to set the level number
+        public int LevelNumber;
+
+        // This field takes in the chapter number, for now set to 1
+        public int ChapterNumber = 1;
+
+        // Dynamically generate LevelName
+        public string LevelName => $"Chapter {ChapterNumber} - Level {LevelNumber}";
         public int MaxMove;
         public int LowMoveTrigger = 10;
         public GemGoal[] Goals;
